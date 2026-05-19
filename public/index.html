@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie's | Online Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>🍽️ Foodie's</h1>
+            <p class="tagline">Hot, fresh food delivered to your door.</p>
+        </div>
+    </header>
+    <main class="container">
+        <section id="menu-section">
+            <h2>Our Menu</h2>
+            <div id="menu-grid" class="menu-grid">
+                <p class="loading">Loading menu…</p>
+            </div>
+        </section>
+        <section id="cart-section">
+            <h2>Your Order</h2>
+            <div id="cart-empty" class="empty-state">Your cart is empty. Add items from the menu above.</div>
+            <div id="cart" class="cart hidden">
+                <ul id="cart-items"></ul>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <strong id="cart-total-price">Rs. 0</strong>
+                </div>
+                <input type="text" id="customer-name" placeholder="Your name" />
+                <button id="place-order-btn">Place Order</button>
+                <p id="order-result" class="order-result"></p>
+            </div>
+        </section>
+        <section id="track-section">
+            <h2>Track Your Order</h2>
+            <p class="hint">Try Order ID <code>1</code>, <code>2</code>, or <code>3</code> for the sample orders.</p>
+            <div class="track-box">
+                <input type="number" id="track-input" placeholder="Enter Order ID (e.g. 1)" min="1" />
+                <button id="track-btn">Track</button>
+            </div>
+            <div id="track-result" class="track-result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>DBMS Project · Aashan Noor (F24-0659) · BS Software Engineering · University of Haripur</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
