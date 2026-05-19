@@ -1,0 +1,16 @@
+{
+  "name": "food-ordering-system",
+  "version": "1.0.0",
+  "description": "Online Food Ordering System - DBMS Project (Node.js + Express + SQLite)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Aashan Noor (F24-0659)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7",
+    "cors": "^2.8.5"
+  }
+}
